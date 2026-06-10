@@ -1,19 +1,20 @@
 import { ChevronRight, Phone } from 'lucide-react';
-import heroImage from '../assets/nuda-plywood-hero.png';
+import heroImage from '../assets/products/green-coated-large-stack.jpg';
 import { trustItems } from '../data/siteContent';
 import { Button } from './Button';
 
 export function HeroSection() {
   return (
     <section className="relative grid min-h-[720px] items-center px-5 pb-20 pt-48 text-white lg:px-[clamp(20px,5vw,72px)] lg:pt-[150px]" id="top">
+      <div className="absolute inset-0 bg-brand-ink" aria-hidden="true" />
       <img
-        className="animate-hero-settle absolute inset-0 h-full w-full object-cover"
+        className="animate-hero-settle absolute inset-y-0 right-0 h-full w-full object-cover object-center lg:w-[68%] lg:object-[50%_center]"
         src={heroImage}
-        alt="Stacked plywood sheets in a building supply warehouse"
+        alt="Large stacks of green coated plywood in a warehouse"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,29,45,0.95)_0%,rgba(6,29,45,0.76)_45%,rgba(6,29,45,0.14)_82%),linear-gradient(180deg,rgba(6,29,45,0.04),rgba(6,29,45,0.56))]" aria-hidden="true" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,#082136_0%,rgba(8,33,54,0.98)_34%,rgba(8,33,54,0.72)_52%,rgba(8,33,54,0.18)_78%),linear-gradient(180deg,rgba(6,29,45,0.02),rgba(6,29,45,0.46))]" aria-hidden="true" />
 
-      <div className="animate-fade-up relative z-10 w-full max-w-[720px]">
+      <div className="animate-fade-up relative z-10 w-full max-w-[640px]">
         <p className="mb-3.5 text-xs font-black uppercase tracking-[0.08em] text-brand-yellow">
           Wholesale construction materials
         </p>
@@ -48,6 +49,7 @@ export function HeroSection() {
           })}
         </div>
       </div>
+
     </section>
   );
 }

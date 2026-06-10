@@ -7,6 +7,7 @@ import { LocationSection } from './components/LocationSection';
 import { MissionSection } from './components/MissionSection';
 import { ProcessSection } from './components/ProcessSection';
 import { ProductsSection } from './components/ProductsSection';
+import { ProductGallery } from './components/ProductGallery';
 import { QuoteBand } from './components/QuoteBand';
 import { StatsBand } from './components/StatsBand';
 
@@ -19,6 +20,7 @@ export default function App() {
       <AboutSection />
       <StatsBand />
       <ProductsSection />
+      <ProductGallery />
       <ProcessSection />
       <MissionSection />
       <ContactSection />

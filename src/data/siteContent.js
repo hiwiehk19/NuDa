@@ -19,9 +19,10 @@ export const phoneNumbers = [
 
 export const navLinks = [
   { label: 'Products', href: '#products' },
+   { label: 'About', href: '#about' },
   { label: 'Process', href: '#process' },
+  { label: 'Gallery', href: '#gallery' },
   { label: 'Mission', href: '#mission' },
-  { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -93,4 +94,31 @@ export const clients = [
   'Builders',
   'Construction firms',
   'Construction businesses',
+];
+
+export const productGallery = [
+  {
+    title: 'Coated plywood inventory',
+    category: 'Black coated plywood',
+    image: 'coatedBlackWarehouse',
+    description: 'Warehouse stock of coated plywood sheets ready for wholesale construction supply.',
+  },
+  {
+    title: 'Green coated plywood',
+    category: 'Coated plywood',
+    image: 'greenCoatedLargeStack',
+    description: 'Large stacked green coated plywood prepared for project and contractor orders.',
+  },
+  {
+    title: 'Laminated plywood stock',
+    category: 'Laminated plywood',
+    image: 'orangeLaminatedCloseup',
+    description: 'Close view of laminated plywood sheets showing layered strength and finish.',
+  },
+  {
+    title: 'Loading and delivery',
+    category: 'Supply support',
+    image: 'loadingPlywoodTruck',
+    description: 'Construction plywood being handled for delivery and active project supply.',
+  },
 ];
