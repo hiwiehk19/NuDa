@@ -1,17 +1,26 @@
 import { Check } from 'lucide-react';
+import materialReadinessImage from '../assets/products/orange-laminated-closeup.jpg';
 import { processMetrics, processSteps } from '../data/siteContent';
-import { PlywoodStack } from './PlywoodStack';
 
 export function ProcessSection() {
   return (
     <section className="grid items-center gap-10 bg-brand-navy bg-[linear-gradient(135deg,rgba(8,33,54,0.95),rgba(14,49,73,0.94))] px-5 py-16 text-white lg:grid-cols-[1.15fr_0.85fr] lg:gap-[clamp(28px,5vw,72px)] lg:px-[clamp(20px,5vw,72px)] lg:py-28" id="process">
       <div className="grid gap-4">
-        <div className="soft-shine relative min-h-80 overflow-hidden rounded-lg border border-white/15 bg-brand-ink bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] p-6">
-          <div className="flex items-center justify-between gap-4 text-white/75">
-            <span>Material readiness</span>
-            <strong className="text-xl font-black text-brand-yellow">Project supply</strong>
+        <div className="relative min-h-80 overflow-hidden rounded-lg border border-white/15 bg-brand-ink shadow-[0_24px_70px_rgba(0,0,0,0.18)]">
+          <img
+            className="absolute inset-0 h-full w-full object-cover"
+            src={materialReadinessImage}
+            alt="Stacked laminated plywood sheets ready for construction supply"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,33,54,0.08),rgba(8,33,54,0.86))]" aria-hidden="true" />
+          <div className="absolute inset-x-0 bottom-0 p-6">
+            <p className="text-sm font-extrabold uppercase tracking-[0.08em] text-brand-yellow">Material readiness</p>
+            <h3 className="mt-2 text-2xl font-black text-white">Project supply</h3>
+            <p className="mt-2 max-w-md text-sm leading-6 text-white/75">
+              Laminated plywood stock prepared for contractors, builders, and wholesale construction orders.
+            </p>
           </div>
-          <PlywoodStack />
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
