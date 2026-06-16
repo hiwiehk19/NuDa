@@ -8,7 +8,7 @@ export function Button({ children, href, variant = 'primary', className = '' }) 
 
   return (
     <a
-      className={`inline-flex min-h-11 items-center justify-center gap-2.5 rounded-lg border px-4 font-black transition duration-200 hover:-translate-y-0.5 ${variants[variant]} ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center gap-2.5 rounded-lg border px-4 text-center font-black leading-tight transition duration-200 hover:-translate-y-0.5 ${variants[variant]} ${className}`}
       href={href}
     >
       {children}
